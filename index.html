@@ -1,0 +1,207 @@
+<!doctype html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>VibeCoder | 웹 명함</title>
+    <meta
+      name="description"
+      content="바이브코더의 웹 명함 — 바이브코딩 풀스택 개발자"
+    />
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <div class="bg" aria-hidden="true"></div>
+
+    <main class="wrap">
+      <section class="card" aria-label="웹 명함">
+        <header class="top">
+          <div class="avatar" aria-hidden="true">
+            <!-- Trustworthy face character (SVG) -->
+            <svg
+              viewBox="0 0 240 240"
+              role="img"
+              aria-label="신뢰감 있는 얼굴 캐릭터"
+            >
+              <defs>
+                <radialGradient id="g1" cx="40%" cy="30%" r="70%">
+                  <stop offset="0%" stop-color="#ffe6d5" />
+                  <stop offset="70%" stop-color="#f7c9aa" />
+                  <stop offset="100%" stop-color="#efb38f" />
+                </radialGradient>
+                <linearGradient id="g2" x1="0" y1="0" x2="1" y2="1">
+                  <stop offset="0%" stop-color="#1f2a44" />
+                  <stop offset="100%" stop-color="#0b1220" />
+                </linearGradient>
+                <filter id="soft" x="-20%" y="-20%" width="140%" height="140%">
+                  <feGaussianBlur in="SourceAlpha" stdDeviation="3" result="b" />
+                  <feOffset in="b" dx="0" dy="4" result="o" />
+                  <feColorMatrix
+                    in="o"
+                    type="matrix"
+                    values="0 0 0 0 0
+                            0 0 0 0 0
+                            0 0 0 0 0
+                            0 0 0 0.25 0"
+                    result="s"
+                  />
+                  <feMerge>
+                    <feMergeNode in="s" />
+                    <feMergeNode in="SourceGraphic" />
+                  </feMerge>
+                </filter>
+              </defs>
+
+              <!-- background blob -->
+              <path
+                d="M59 40c30-26 92-33 126-5 37 30 35 88 17 130-18 43-56 62-94 61-38-1-77-22-94-62-17-41 14-97 45-124Z"
+                fill="url(#g2)"
+                opacity="0.18"
+              />
+
+              <!-- shoulders -->
+              <path
+                d="M54 214c10-44 44-62 66-62h0c22 0 56 18 66 62"
+                fill="#0b1220"
+                opacity="0.35"
+              />
+
+              <!-- face -->
+              <g filter="url(#soft)">
+                <path
+                  d="M120 46c41 0 74 34 74 76 0 49-30 86-74 86S46 171 46 122c0-42 33-76 74-76Z"
+                  fill="url(#g1)"
+                />
+
+                <!-- hair -->
+                <path
+                  d="M58 112c6-42 40-72 76-72 39 0 73 28 78 71 2 16-1 30-7 42-3-20-14-37-30-47-18-11-41-12-59-3-16 8-33 22-58 9Z"
+                  fill="#121a2e"
+                  opacity="0.95"
+                />
+                <path
+                  d="M52 120c0-45 35-80 78-80 45 0 80 32 80 74 0 14-3 26-9 36 2-8 3-17 1-27-5-24-22-41-45-47-22-6-45 2-61 15-13 10-22 24-22 29-8 0-14 0-22 0Z"
+                  fill="#10192d"
+                />
+
+                <!-- eyebrows -->
+                <path
+                  d="M82 115c12-10 28-12 44-6"
+                  fill="none"
+                  stroke="#3b2a23"
+                  stroke-width="6"
+                  stroke-linecap="round"
+                  opacity="0.55"
+                />
+                <path
+                  d="M158 115c-12-10-28-12-44-6"
+                  fill="none"
+                  stroke="#3b2a23"
+                  stroke-width="6"
+                  stroke-linecap="round"
+                  opacity="0.55"
+                />
+
+                <!-- eyes -->
+                <g opacity="0.95">
+                  <path
+                    d="M92 134c8-6 18-6 26 0"
+                    fill="none"
+                    stroke="#10131a"
+                    stroke-width="6"
+                    stroke-linecap="round"
+                  />
+                  <path
+                    d="M122 134c8-6 18-6 26 0"
+                    fill="none"
+                    stroke="#10131a"
+                    stroke-width="6"
+                    stroke-linecap="round"
+                  />
+                  <circle cx="105" cy="138" r="3.4" fill="#10131a" />
+                  <circle cx="135" cy="138" r="3.4" fill="#10131a" />
+                </g>
+
+                <!-- nose -->
+                <path
+                  d="M120 140c-3 9-3 17 0 23"
+                  fill="none"
+                  stroke="#3b2a23"
+                  stroke-width="5"
+                  stroke-linecap="round"
+                  opacity="0.35"
+                />
+
+                <!-- smile -->
+                <path
+                  d="M96 174c14 12 34 12 48 0"
+                  fill="none"
+                  stroke="#10131a"
+                  stroke-width="7"
+                  stroke-linecap="round"
+                  opacity="0.9"
+                />
+
+                <!-- subtle cheeks -->
+                <ellipse cx="84" cy="160" rx="12" ry="7" fill="#e28a7c" opacity="0.18" />
+                <ellipse cx="156" cy="160" rx="12" ry="7" fill="#e28a7c" opacity="0.18" />
+              </g>
+
+              <!-- collar -->
+              <path
+                d="M82 208c8-17 20-26 38-26s30 9 38 26"
+                fill="#0b1220"
+                opacity="0.55"
+              />
+              <path
+                d="M104 188c5 8 10 12 16 12s11-4 16-12"
+                fill="#0b1220"
+                opacity="0.75"
+              />
+            </svg>
+          </div>
+
+          <div class="id">
+            <p class="kicker">WEB BUSINESS CARD</p>
+            <h1 class="name">바이브코더</h1>
+            <p class="role">바이브코딩 풀스택 개발자</p>
+            <p class="tagline">“아이디어를 빠르게 제품으로.”</p>
+          </div>
+        </header>
+
+        <div class="divider" role="separator" aria-hidden="true"></div>
+
+        <section class="info" aria-label="연락처">
+          <a class="row" href="mailto:vibecoder@vibe.com" data-copy="vibecoder@vibe.com">
+            <span class="ico" aria-hidden="true">✉</span>
+            <span class="label">Email</span>
+            <span class="value">vibecoder@vibe.com</span>
+            <span class="hint" aria-hidden="true">복사</span>
+          </a>
+
+          <a class="row" href="tel:01000000000" data-copy="010-0000-0000">
+            <span class="ico" aria-hidden="true">☎</span>
+            <span class="label">Phone</span>
+            <span class="value">010-0000-0000</span>
+            <span class="hint" aria-hidden="true">복사</span>
+          </a>
+        </section>
+
+        <footer class="actions" aria-label="동작">
+          <button class="btn" id="btnSave" type="button">vCard(.vcf) 저장</button>
+          <button class="btn ghost" id="btnTheme" type="button" aria-pressed="false">
+            테마 전환
+          </button>
+        </footer>
+
+        <div class="toast" id="toast" role="status" aria-live="polite" aria-atomic="true"></div>
+      </section>
+
+      <p class="note">
+        팁: 이메일/전화 줄을 클릭하면 열리며, 같은 줄을 다시 클릭하면 복사됩니다.
+      </p>
+    </main>
+
+    <script src="./script.js"></script>
+  </body>
+</html>
