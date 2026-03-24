@@ -5,6 +5,7 @@ const CONTACT = {
   email: "vibecoder@vibe.com",
   phoneDisplay: "010-0000-0000",
   phoneTel: "01000000000",
+  blogUrl: "https://blog.naver.com/kazer2me",
 };
 
 function $(sel, root = document) {
@@ -83,6 +84,7 @@ function buildVCard() {
     `TITLE:${CONTACT.title}`,
     `EMAIL;TYPE=INTERNET:${CONTACT.email}`,
     `TEL;TYPE=CELL:${CONTACT.phoneTel}`,
+    `URL:${CONTACT.blogUrl}`,
     `NOTE:${CONTACT.tagline}`,
     "END:VCARD",
   ];
